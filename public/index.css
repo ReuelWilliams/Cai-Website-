@@ -4,6 +4,9 @@ html {
     width: 100vw;
     background: rgb(221,221,221);
 }
+html:hover {
+    cursor: default;
+}
 
 body {
     margin: 0;
@@ -40,11 +43,13 @@ body {
 
 .timeline-headline {
     font-size: 1.25em;
-    text-decoration: none; /* For Links */
 }
 
-.timeline-headline:hover {
-    /* Mock links */
-    text-decoration: underline;
+.timeline-headline a {
+    color: black;
+    text-decoration: none;
+}
+.timeline-headline:hover a{
     cursor: pointer;
+    text-decoration: underline;
 }
