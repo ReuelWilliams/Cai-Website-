@@ -53,3 +53,14 @@ body {
     cursor: pointer;
     text-decoration: underline;
 }
+
+.cai-logo {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+}
+
+.ray-one,.ray-two,.ray-three {
+    fill: none;
+    stroke-width: 4px;
+}
