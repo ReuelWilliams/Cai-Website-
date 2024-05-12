@@ -2,11 +2,12 @@ html {
     /* color: red; */
     height: 100vh;
     width: 100vw;
-    background: rgb(221,221,221);
+    background: rgb(162, 151, 151);
 }
 html:hover {
-    cursor: default;
+    cursor: url('public/note.png'), auto;
 }
+
 
 body {
     margin: 0;
@@ -63,4 +64,41 @@ body {
 .ray-one,.ray-two,.ray-three {
     fill: none;
     stroke-width: 4px;
+}
+
+.lattice-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow interaction with elements behind */
+}
+
+.lattice-dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: black; /* Color of the lattice dots */
+}
+
+/* Adjust the spacing between lattice dots as needed */
+.lattice-dot:nth-child(4n+1) {
+    top: 20px;
+}
+.lattice-dot:nth-child(4n+2) {
+    top: 40px;
+}
+.lattice-dot:nth-child(4n+3) {
+    top: 60px;
+}
+.lattice-dot:nth-child(4n+4) {
+    top: 80px;
+}
+
+.lattice-dot:nth-child(odd) {
+    left: 20px;
+}
+.lattice-dot:nth-child(even) {
+    left: 40px;
 }
